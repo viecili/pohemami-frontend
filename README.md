@@ -1,4 +1,4 @@
-# Pohemami  Client
+# Pohemami Client
 
 ## Rundown
 This is the client (frontend) repository for the Pohemami project for the IBM Cloud Native Bootcamp. This is a relatvely simple application whereby a page load/refresh will perform an HTTP GET request against the backend to retrieve some data in and display it a card-like fashion to the user.
