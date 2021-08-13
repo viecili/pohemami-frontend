@@ -16,10 +16,10 @@ The next steps involves integration with the backend with the endpoints are read
 
 ## Catributors
 
-Sylvester the Cat
-The Pink Panther
-Apache Tomcat
-Felix the Cat
-Garfield
-Tom Cat
-Top Cat
+1) Sylvester the Cat
+2) The Pink Panther
+3) Apache Tomcat
+4) Felix the Cat
+5) Garfield
+6) Tom Cat
+7) Top Cat
