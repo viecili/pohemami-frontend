@@ -11,7 +11,7 @@ spec:
     - name: http
       port: 80
       protocol: TCP
-      targetPort: 80   # HTML and JS files are served by Nginx on port 80
+      targetPort: 8081   # HTML and JS files are served by Nginx on port 80
   selector:
     app.kubernetes.io/instance: pohemami-client-instance
     app.kubernetes.io/name: pohemami-client

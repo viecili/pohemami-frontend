@@ -9,8 +9,9 @@ COPY . ./
 RUN npm run build
 
 # production environment
-FROM nginx:stable-alpine
+# FROM nginx:stable-alpine # This is causing some grief here
+FROM twalter/openshift-nginx:stable
 COPY --from=builder /app/build /usr/share/nginx/html
-EXPOSE 80
+EXPOSE 8081
 CMD ["nginx", "-g", "daemon off;"]
 
