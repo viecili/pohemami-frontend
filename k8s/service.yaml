@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: pohemami-client
+    app.kubernetes.io/instance: pohemami-client-instance
+    app.kubernetes.io/name: pohemami-client
+  name: pohemami-client
+spec:
+  ports:
+    - name: http
+      port: 80
+      protocol: TCP
+      targetPort: 80   # HTML and JS files are served by Nginx on port 80
+  selector:
+    app.kubernetes.io/instance: pohemami-client-instance
+    app.kubernetes.io/name: pohemami-client
+  sessionAffinity: None
+  type: ClusterIP
